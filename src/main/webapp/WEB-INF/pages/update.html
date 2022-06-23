@@ -11,19 +11,27 @@
             <table th:border="2" th:cellpadding="15">
                 <tr>
                     <td>ID:</td>
-                    <td><input type="number" th:field="${user.id}" readonly/></td>
+                    <td><label>
+                        <input type="number" th:field="${user.id}" readonly/>
+                    </label></td>
                 </tr>
                 <tr>
                     <td>First Name:</td>
-                    <td><input type="text" th:field="${user.name}"/></td>
+                    <td><label>
+                        <input type="text" th:field="${user.name}"/>
+                    </label></td>
                 </tr>
                 <tr>
                     <td>Last Name:</td>
-                    <td><input type="text" th:field="${user.lastName}"/></td>
+                    <td><label>
+                        <input type="text" th:field="${user.lastName}"/>
+                    </label></td>
                 </tr>
                 <tr>
                     <td>Is Client?</td>
-                    <td><input type="checkbox" th:field="${user.client}"/></td>
+                    <td><label>
+                        <input type="checkbox" th:field="${user.client}"/>
+                    </label></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit" value="Update"></td>
